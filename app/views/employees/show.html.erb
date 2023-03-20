@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title"> <%= @employee.first_name %>
+    <%= @employee.last_name %>  </h2>
+    <h5 class="card-subtitle mb-2 text-muted"> <%= @employee.email %>   |     <%= @employee.phone %>  |       <%= @employee.instagram %></h5>
+    <br/>
+    <br/>
+<div>
+  <%= link_to "Edit", edit_employee_path(@employee) ,class:"btn btn-secondary"%> |
+  <%= link_to "Back", employees_path,class:"btn btn-dark"  %>
+
+</div>
+
+  </div>
+</div>
